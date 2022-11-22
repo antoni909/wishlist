@@ -1,0 +1,30 @@
+header{
+    background-color: whitesmoke;
+}
+body{
+    background-color: white;
+}
+.wishlist-container{
+    display: flex;
+    flex-direction: row;
+}
+.new-card{
+    max-width: 10px;
+    height: 25px;
+}
+
+input[type="submit"] {
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    padding: 3px;
+}
+.edit-button{
+    background-color: orange;
+}
+.remove-btn{
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+
