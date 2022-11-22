@@ -2,42 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vacation Destination WishList</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
-<header id="header">
-    <h1 class="main-heading">Vacation Destinations WishList</h1>
-    <p class="main-description">
-        Found exciting places to visition on your next vacation? Use the form below to add them to your wishlist
-    </p>`
-</header>
 <body>
-
-    <form name="vacationform">
-        <label 
-            for="destination"
-        >Destination name</label>
-        <input type="text" name="destination" required minlength="2">
-        
-        <label for="location">Location</label>
-        <input type="text" name="location" required>
-        
-        <label for="photo">Photo</label>
-        <input type="url" name="photo">
-        
-        <label for="description">Description</label>
-        <input type="text-area" name="description">
-
-        <input type="submit" class="button" id="list-btn">
+    <header class="header">
+        <h1 class="main-heading">Vacation Destinations WishList</h1>
+        <p class="main-description">
+            Found exciting places to visit on your next vacation? Use the form below to add them to your wishlist
+        </p>
+    </header>
+    <section class="form-section">
+        <form name="vacationform">   
+            <label for="destination-inp">Destination name</label>
+            <input 
+                type="text" 
+                id="destination-inp" 
+                name="destination" 
+                placeholder="Enter the name of the destination"
+                minlength="2"
+                required 
+            >
+            
+            <label for="location-inp">Location</label>
+            <input 
+                type="text" 
+                id="locaton-inp" 
+                name="location" 
+                placeholder="Where is it located?"
+                minlength="2"
+                required
+            >
+            
+            <label for="photo-inp">Photo</label>
+            <input 
+                type="url" 
+                id="photo-inp"
+                name="photo"
+                placeholder="Enter an image url of the place"
+            >
+            
+            <label for="description-inp">Description</label>
+            <!-- <input 
+                type="text" 
+                id="description-inp" 
+                name="description"
+                placeholder="where is it located?"
+            > -->
+            <textarea
+                type="text" 
+                id="description-inp" 
+                name="description"
+                placeholder="Where is it located?"
+            ></textarea>
+            
+            <input
+                class="button-inp" 
+                type="submit" 
+                id="list-btn" 
+                value="Add to List"
+            >
     </form>
-    
-    <h2> Enter destination details </h2>
-
+    </section>
+    <h2 class="h2-instructions"> Enter destination details </h2>
     <div id="div-wishlist" class="wishlist-container"></div>
-
     <script src="index.js"></script>
-    
 </body>
 </html>
