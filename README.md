@@ -38,4 +38,14 @@ Agenda:
     - [js.io fetch](https://javascript.info/fetch)
     - [js.io network requests](https://javascript.info/network)
 
-- [ ] TODO: 
+- [ ] TODO: Research
+  - [ ] READ Unsplash Documentation
+    - register for api access
+      - access/secret key guidlines
+    - base url
+      - [relavent endpoint resources to be queried](https://unsplash.com/documentation#search-photos)
+
+- [ ] TODO: JS 
+  - [ ] REFACTOR: 
+    - rm hard code, ensure DRY, add helper methods
+    - Replace: use regex for conditional (ln 21)
