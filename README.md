@@ -1,7 +1,8 @@
 # Tasks
 
 ## DAY 2 
-Agenda - Continue work with WishList App
+Agenda 
+- Continue work with WishList App
 
 - [ ] TODO: HTML
         - [ ] WIP: form field validation for destination/location/photo
@@ -26,11 +27,11 @@ Agenda - Continue work with WishList App
 
 ## Day 3 
 Agenda: 
-    - Refactor 
-      - modularize index.js 
-      - carryover day 2 JS Todos 
-        - [js.io modules](https://javascript.info/modules-intro)
-    - Plan Unsplash API integration
-      - how to fetch API data   
-        - [js.io fetch](https://javascript.info/fetch)
-        - [js.io network requests](https://javascript.info/network)
+- Refactor 
+  - modularize index.js 
+  - carryover day 2 JS Todos 
+    - [js.io modules](https://javascript.info/modules-intro)
+- Plan Unsplash API integration
+  - how to fetch API data   
+    - [js.io fetch](https://javascript.info/fetch)
+    - [js.io network requests](https://javascript.info/network)
