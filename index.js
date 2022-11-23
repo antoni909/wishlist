@@ -1,26 +1,17 @@
+'use strict';
+
+import { updateH2ChildNodes } from "./js/updateH2TextNode.js"
 
 const form = document.vacationform
-const button = document.getElementById("list-btn")
+// const button = document.getElementById("list-btn")
 const div = document.getElementById("div-wishlist")
 const titleBanner = document.getElementById("title-banner")
 
-// const destInput = document.getElementById("destination-inp")
-// destInput.addEventListener("input", ()=>{
-//     console.log("listening to input")
-//     destInput.setCustomValidity("")
-//     destInput.checkValidity()
-// })
-// destInput.addEventListener("invalid", ()=>{
-//     console.log("invalid input")
-//     if( destInput.value === "" ) destInput.setCustomValidity("please fill out this field")
-//     else {
-//         destInput.setCustomValidity("Please lengthen this text to 2 characters or more (your are curently using 1 character)")
-//         isValid = false
-//     }
-// })    
-
 // form.addEventListener("submit", handleFormSubmit) 
-button.addEventListener( "click", handleClick )
+
+form.addEventListener( "submit", handleClick )
+
+// button.addEventListener( "click", `handleClick ) 
 
 function handleClick(e){
     e.preventDefault()
@@ -89,9 +80,9 @@ function createCardNode(form, nodes){
 
     nodes.push( newDiv )
 }
-function updateH2ChildNodes( parentNode ){
-    let newText = document.createTextNode("My WishList")
-    let oldText = parentNode.childNodes[0]
-    if( oldText !== null ) parentNode.replaceChild( newText, oldText)
-}
+// function updateH2ChildNodes( parentNode ){
+//     let newText = document.createTextNode("My WishList")
+//     let oldText = parentNode.childNodes[0]
+//     if( oldText !== null ) parentNode.replaceChild( newText, oldText)
+// }
 
