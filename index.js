@@ -3,17 +3,12 @@
 import { updateH2ChildNodes } from "./js/updateH2TextNode.js"
 
 const form = document.vacationform
-// const button = document.getElementById("list-btn")
 const div = document.getElementById("div-wishlist")
 const titleBanner = document.getElementById("title-banner")
 
-// form.addEventListener("submit", handleFormSubmit) 
+form.addEventListener( "submit", handleFormSubmit )
 
-form.addEventListener( "submit", handleClick )
-
-// button.addEventListener( "click", `handleClick ) 
-
-function handleClick(e){
+function handleFormSubmit(e){
     e.preventDefault()
     let nodes = []    
     
