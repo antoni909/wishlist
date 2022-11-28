@@ -1,12 +1,13 @@
 "use strict";
 
+import { divWishList } from "./elements/form.js";
+import { defaultPlaceholder } from "./urls.js";
+
 export function createCardNode(form, nodes){
 
-    let placeHolder = "https://cavchronicle.org/wp-content/uploads/2018/03/top-travel-destination-for-visas-900x504.jpg"
     let { destination,location, photo, description } = form
+    let imageSource = ( photo.value < 1 )? defaultPlaceholder: photo.value
 
-    placeHolder = ( photo.value < 1 )? placeHolder: photo.value
-    console.log( form )
     let newDiv = document.createElement("div")
     newDiv.setAttribute("class","new-card card-item")
 
@@ -27,8 +28,8 @@ export function createCardNode(form, nodes){
     descriptionParagraph.setAttribute("class","desc-header")
     
     let img = document.createElement( "img")
-    img.setAttribute("src", placeHolder)
-    img.setAttribute("alt", "shows destination")
+    img.setAttribute( "src", imageSource )
+    img.setAttribute( "alt", "shows destination" )
     destinationHeading.textContent = destination.value
     locationHeading.textContent = location.value
     descriptionParagraph.textContent = description.value
@@ -56,7 +57,6 @@ export function createCardNode(form, nodes){
     newDiv.appendChild( descriptionParagraph )
     newDiv.appendChild( editButton )
     newDiv.appendChild( removeButton )
-    // console.log(newDiv)
     nodes.push( newDiv )
 
 }

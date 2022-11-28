@@ -6,16 +6,14 @@ import { createCardNode } from "../createCards.js"
 import { baseURL } from "../urls.js"
 
 const form = document.vacationform
-const divWishList = document.getElementById("div-wishlist")
-// const baseUrl = "https://jsonplaceholder.typicode.com/albums/1/photos"
+export const divWishList = document.getElementById("div-wishlist")
 
-form.addEventListener( "submit", (e) => {
+form.addEventListener( "submit", ( e ) => {
     e.preventDefault()
     let nodesArray = []    
-    console.log(form)
     updateH2ChildNodes( titleBanner )
     createCardNode( form , nodesArray )
-    divWishList.append(...nodesArray)
+    divWishList.append( ...nodesArray )
     form.reset()
     genericRequest( baseURL, {} )
 
