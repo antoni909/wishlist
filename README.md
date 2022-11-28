@@ -41,7 +41,7 @@ Agenda:
       - [ ] Replace: use regex for conditional (ln 21)
   - [ ] READ Javascript.io  
     - [ ] READ: [js.io fetch](https://javascript.info/fetch)
-    - [ ] READ: [js.io network requests](https://javascript.info/network)
+    - [x] READ: [js.io network requests](https://javascript.info/network)
   - [ ] READ: Unsplash Documentation
     - [ ] register for api access
     - [ ] access/secret key guidlines
@@ -49,7 +49,7 @@ Agenda:
     - [ ] READ: [ relavent endpoint resources to be queried ](https://unsplash.com/documentation#search-photos)
 
 - PHASE 2 REQUIREMENTS: Plan Unsplash API integration
-    - remove photo url field from WishList form
-    - using only destination/location fields
-      - fetch RELAVENT image from Unslash API
-      - use that as the rendered cards image
+    - [x] remove photo url field from WishList form
+      - [ ] fetch RELAVENT image from Unslash API
+          - using only destination/location fields
+      - [ ] use that as the rendered cards image`
