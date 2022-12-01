@@ -90,7 +90,7 @@ export const postCard = (obj) => {
 }
 const updateCard = ( updatedObj ) => {
 
-    const query = updatedObj.destination
+    const query = updatedObj.updatedDestination
     const server_query = `http://localhost:4000/unsplash/${query}`
     const response = fetchImageUrl( server_query )
 
@@ -107,7 +107,6 @@ const updateCard = ( updatedObj ) => {
         })
         .then( res => res.json() )
         .then( data => {
-            console.log(data)
             location.reload()
         })
         .catch( err => console.log( err ) )
@@ -131,5 +130,3 @@ const deleteCard = ( _id ) => {
     .catch( err => console.log( err ))
 
 }
-
-``
