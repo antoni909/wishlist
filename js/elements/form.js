@@ -6,7 +6,7 @@ import { createCardNode } from "../createCards.js"
 import { baseURL } from "../urls.js"
 
 const form = document.vacationform
-const divWishList = document.getElementById("div-wishlist")
+export const divWishList = document.getElementById("div-wishlist")
 // const baseUrl = "https://jsonplaceholder.typicode.com/albums/1/photos"
 
 form.addEventListener( "submit", (e) => {
